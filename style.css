@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FLEX CSS */
+p, h3{
+    color: #fff;
+    margin: 50px 0;
+    line-height: 1.5;
+}
+#body-main{
+    background-color: aliceblue;display: flex;
+    justify-content: center;
+} 
+#main-col{
+    display: flex;
+    width: 60%;
+    height: 100vh;    
+    align-items: center;
+    border  
+}
+#col1, #col2, #col3{
+    padding: 70px;
+    height: 500px;
+}
+#col1{
+    background-color: orange;
+}
+#col2{
+    background-color: rgb(24, 116, 119);
+}
+#col3{
+    background-color:rgb(5, 66, 68);
+}
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+/* GRID CSS */
+#grid-body{
+    background-color: rgb(5, 5, 49);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#body-grid{
+    width: 60%;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+    'a a a b b'
+    'c c d d d'
+    'c c e e e';
+    gap: 10px;
+}
+
+#grid1{
+    background-color: orangered;
+    grid-area: a;
+    
+}
+#grid2{
+    background-color: orange;
+    grid-area: b;
+}
+#grid3{
+    background-color: green;
+    grid-area: c;
+}
+#grid4{
+    background-color:deepskyblue;
+    grid-area: d;
+    gap: 10px;    
+}
+#grid5{
+    background-color: deepskyblue;
+    grid-area: e;
+}
